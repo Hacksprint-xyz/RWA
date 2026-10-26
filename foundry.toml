@@ -1,0 +1,30 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+libs = ["node_modules", "lib"]
+solc = "0.8.25"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+remappings = [
+    "forge-std/=lib/forge-std/src/",
+    "@chainlink/contracts/src/v0.8/ccip/=node_modules/@chainlink/contracts-ccip/src/v0.8/ccip/",
+    "@chainlink/contracts/=node_modules/@chainlink/contracts/",
+    "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/",
+]
+
+[fmt]
+bracket_spacing = true
+int_types = "long"
+line_length = 120
+multiline_func_header = "all"
+number_underscore = "thousands"
+quote_style = "double"
+tab_width = 4
+
+[invariant]
+runs = 128
+depth = 64
+fail_on_revert = false

@@ -1,0 +1,20 @@
+{
+  "name": "tokenized-equities",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Reference contracts for tokenizing an equity: backed, synthetic and cross-chain variants.",
+  "scripts": {
+    "simulate:mint": "node functions/simulate.js mint",
+    "simulate:redeem": "node functions/simulate.js redeem",
+    "upload-secrets": "node functions/uploadSecrets.js"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "1.2.0",
+    "@chainlink/contracts-ccip": "^1.2.0",
+    "@chainlink/functions-toolkit": "^0.2.8",
+    "@openzeppelin/contracts": "5.0.2",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2"
+  }
+}
